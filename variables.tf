@@ -9,7 +9,7 @@ variable "vpc_id" {
 variable "ami" {
   type        = string
   description = "provide an ubuntu or debian ami"
-  default = "ami-00ac45f3035ff009e"
+  default = "ami-087da76081e7685da"
 }
 
 variable "instance_type" {
@@ -27,7 +27,7 @@ variable "subnet_id" {
 variable "key_name" {
   type        = string
   description = "provide an existing keypair"
-  default = "Jenkins-Key.pem"
+  default = "Jenkins-Key"
 }
 
 variable "user_data" {
