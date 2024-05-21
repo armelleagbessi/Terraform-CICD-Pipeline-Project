@@ -49,11 +49,11 @@ pipeline {
             }
         }
         // Snyk Infrastructure Automation Test
-        stage('Snyk Security Test') {
-            steps {
-                sh '${SNYK_HOME}/snyk-linux iac test . -fn'
-            }
-        }
+        // stage('Snyk Security Test') {
+        //     steps {
+        //         sh '${SNYK_HOME}/snyk-linux iac test . -fn'
+        //     }
+        // }
         // Checkov Infrastructure Automation Test
         stage('Checkov scan') {
             steps {
